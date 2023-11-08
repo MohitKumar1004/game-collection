@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './home/Home';
+import NinjaNakamoto from './ninja-nakamoto/NinjaNakamoto';
+import PingPong2 from './ping-pong/PingPong2';
+import Tetris from './tetris/Tetris';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/game/tetris" element={<Tetris/>} />
+        <Route exact path="/game/pingpong" element={<PingPong2/>} />
+        <Route exact path="/game/ninjanakamoto" element={<NinjaNakamoto/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
