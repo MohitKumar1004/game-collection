@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/game-collection/static/css/main.3f7da0ea.css",
-    "main.js": "/game-collection/static/js/main.42c9b6f4.js",
+    "main.js": "/game-collection/static/js/main.f0897e1a.js",
     "static/js/787.e99e3d7c.chunk.js": "/game-collection/static/js/787.e99e3d7c.chunk.js",
     "static/media/bgimage3.jpg": "/game-collection/static/media/bgimage3.725cea188a6e20a1e156.jpg",
     "static/media/bg.png": "/game-collection/static/media/bg.d63cfd51f1a63591fdd7.png",
@@ -16,11 +16,11 @@
     "static/media/Pixel-LCD-7.woff": "/game-collection/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
     "index.html": "/game-collection/index.html",
     "main.3f7da0ea.css.map": "/game-collection/static/css/main.3f7da0ea.css.map",
-    "main.42c9b6f4.js.map": "/game-collection/static/js/main.42c9b6f4.js.map",
+    "main.f0897e1a.js.map": "/game-collection/static/js/main.f0897e1a.js.map",
     "787.e99e3d7c.chunk.js.map": "/game-collection/static/js/787.e99e3d7c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f7da0ea.css",
-    "static/js/main.42c9b6f4.js"
+    "static/js/main.f0897e1a.js"
   ]
 }
