@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/gamockhub/static/css/main.f891fa3a.css",
-    "main.js": "/gamockhub/static/js/main.60d38261.js",
-    "static/js/787.e99e3d7c.chunk.js": "/gamockhub/static/js/787.e99e3d7c.chunk.js",
-    "static/media/bgimage3.jpg": "/gamockhub/static/media/bgimage3.725cea188a6e20a1e156.jpg",
-    "static/media/bg.png": "/gamockhub/static/media/bg.d63cfd51f1a63591fdd7.png",
-    "static/media/bgimage2.png": "/gamockhub/static/media/bgimage2.1b785e55fbfa8fcf7cf0.png",
-    "static/media/bgimage4.png": "/gamockhub/static/media/bgimage4.de70f61f448bb91ac623.png",
-    "static/media/bgimage1.jpg": "/gamockhub/static/media/bgimage1.dda0870691b7c7d59593.jpg",
-    "static/media/PressStart2P-Regular.ttf": "/gamockhub/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
-    "static/media/background.png": "/gamockhub/static/media/background.3ed950731455d7715e89.png",
-    "static/media/shop.png": "/gamockhub/static/media/shop.c609dd4aae9185dfa3d1.png",
-    "static/media/Death.png": "/gamockhub/static/media/Death.2b3515119b862cc76655.png",
-    "static/media/Run.png": "/gamockhub/static/media/Run.066a893541826d62751f.png",
-    "static/media/Pixel-LCD-7.woff": "/gamockhub/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
-    "index.html": "/gamockhub/index.html",
-    "main.f891fa3a.css.map": "/gamockhub/static/css/main.f891fa3a.css.map",
-    "main.60d38261.js.map": "/gamockhub/static/js/main.60d38261.js.map",
-    "787.e99e3d7c.chunk.js.map": "/gamockhub/static/js/787.e99e3d7c.chunk.js.map"
+    "main.css": "/game-collection/static/css/main.3f7da0ea.css",
+    "main.js": "/game-collection/static/js/main.a08be0ca.js",
+    "static/js/787.e99e3d7c.chunk.js": "/game-collection/static/js/787.e99e3d7c.chunk.js",
+    "static/media/bgimage3.jpg": "/game-collection/static/media/bgimage3.725cea188a6e20a1e156.jpg",
+    "static/media/bg.png": "/game-collection/static/media/bg.d63cfd51f1a63591fdd7.png",
+    "static/media/bgimage2.png": "/game-collection/static/media/bgimage2.1b785e55fbfa8fcf7cf0.png",
+    "static/media/bgimage4.png": "/game-collection/static/media/bgimage4.de70f61f448bb91ac623.png",
+    "static/media/bgimage1.jpg": "/game-collection/static/media/bgimage1.dda0870691b7c7d59593.jpg",
+    "static/media/PressStart2P-Regular.ttf": "/game-collection/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
+    "static/media/background.png": "/game-collection/static/media/background.3ed950731455d7715e89.png",
+    "static/media/shop.png": "/game-collection/static/media/shop.c609dd4aae9185dfa3d1.png",
+    "static/media/Death.png": "/game-collection/static/media/Death.2b3515119b862cc76655.png",
+    "static/media/Run.png": "/game-collection/static/media/Run.066a893541826d62751f.png",
+    "static/media/Pixel-LCD-7.woff": "/game-collection/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
+    "index.html": "/game-collection/index.html",
+    "main.3f7da0ea.css.map": "/game-collection/static/css/main.3f7da0ea.css.map",
+    "main.a08be0ca.js.map": "/game-collection/static/js/main.a08be0ca.js.map",
+    "787.e99e3d7c.chunk.js.map": "/game-collection/static/js/787.e99e3d7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f891fa3a.css",
-    "static/js/main.60d38261.js"
+    "static/css/main.3f7da0ea.css",
+    "static/js/main.a08be0ca.js"
   ]
 }
