@@ -1,6 +1,9 @@
-import React from 'react'
-
 export default function useUtils() {
+
+    let timer = 60
+    let timerId
+
+    const clearTime = () => clearTimeout(timerId)
 
     const rectangleCollision = ({ rectangle1, rectangle2 }) => {
         return (
@@ -15,32 +18,40 @@ export default function useUtils() {
         )
     }
 
-    const determineWinner = ({ player, enemy, timerId }) => {
+    const determineWinner = ({ player, enemy ,gameRunning }) => {
 
         clearTimeout(timerId)
+
+        if(!gameRunning) return
 
         document.querySelector('#displayText').style.display = 'flex';
         
         if(player.health === enemy.health) {
+            player.switchSprite('death')
+            enemy.switchSprite('death')
             document.querySelector('#displayText').innerHTML = 'Tie';
         } else if(player.health > enemy.health) {
+            enemy.switchSprite('death')
             document.querySelector('#displayText').innerHTML = 'Player 1 Wins';
         } else {
+            player.switchSprite('death')
             document.querySelector('#displayText').innerHTML = 'Player 2 Wins';
         }
     }
 
-    const decreaseTimer = ({ player, enemy, timer, timerId }) => {
+    const decreaseTimer = ({ player, enemy, windowFocus, gameRunning }) => {
         if(timer>0) {
             timer--
-            timerId = setTimeout(() => decreaseTimer({ player, enemy, timer, timerId }), 1000)
-            document.querySelector('#timer').innerHTML = timer;
+            timerId = setTimeout(() => decreaseTimer({ player, enemy, timer, timerId, windowFocus }), 1000)
+            if(document.querySelector('#timer')) {
+                document.querySelector('#timer').innerHTML = timer;
+            }
         }
 
         if(timer === 0) {
-            determineWinner({ player, enemy, timerId })
+            determineWinner({ player, enemy, gameRunning })
         }
     }
 
-    return [rectangleCollision,determineWinner,decreaseTimer]
+    return [rectangleCollision,determineWinner,decreaseTimer,clearTime]
 }

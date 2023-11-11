@@ -17,3 +17,8 @@ code {
   font-family: 'Pixel';
   src: url('font/Pixel-LCD-7.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('font/PressStart2P-Regular.ttf') format('truetype');
+}

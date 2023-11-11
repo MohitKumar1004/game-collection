@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import useGame from './hooks/useGame'
+import useGame from './components/useGame'
 
 function NinjaNakamoto() {
 

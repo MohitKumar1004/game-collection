@@ -7,7 +7,7 @@ export const StyledNavbar = styled.div`
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(45deg,white,grey,white);
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 `
 
 export const EndNavbar = styled.div`

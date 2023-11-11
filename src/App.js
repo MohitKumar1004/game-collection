@@ -7,11 +7,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Home/>} />
-        <Route exact path="/game/tetris" element={<Tetris/>} />
-        <Route exact path="/game/pingpong" element={<PingPong2/>} />
-        <Route exact path="/game/ninjanakamoto" element={<NinjaNakamoto/>} />
+      <Routes base path="/game-collection">
+        <Route exact path="/game-collection" element={<Home/>} />
+        <Route exact path="/game-collection/game/tetris" element={<Tetris/>} />
+        <Route exact path="/game-collection/game/pingpong" element={<PingPong2/>} />
+        <Route exact path="/game-collection/game/ninjanakamoto" element={<NinjaNakamoto/>} />
       </Routes>
     </BrowserRouter>
   );

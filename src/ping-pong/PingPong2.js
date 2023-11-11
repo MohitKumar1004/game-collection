@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { StyledWrapper } from '../home/styles/StyledHome';
 
 export default function PingPong2() {
 
@@ -267,17 +268,14 @@ export default function PingPong2() {
             // canv.current.addEventListener("mousemove", getMousePos);
             if(canv.current) {
                 canv.current.addEventListener("mousemove", getMousePos);
-                return () => {
-                    canv.current.removeEventListener("mousemove", getMousePos);
-                }
             }
         },[cpu])
     
 
     return (
-        <div>
+        <StyledWrapper>
             <canvas ref={canv} id="table" width="600" height="400"></canvas>
             <button onClick={start}>Reset</button>
-        </div>
+        </StyledWrapper>
     )
 }

@@ -8,8 +8,9 @@ export default function Navbar() {
     return (
         <StyledNavbar>
             <StartNavbar>
-                <div><Link to="/tetris">Tetris</Link></div>
-                <div><Link to="/pingpong">PingPong</Link></div>
+                <div><Link to="/game-collection/game/tetris">Tetris</Link></div>
+                <div><Link to="/game-collection/game/pingpong">Ping Pong</Link></div>
+                <div><Link to="/game-collection/game/ninjanakamoto">Ninja Nakamoto</Link></div>
             </StartNavbar>
             <EndNavbar>
                 {coins}

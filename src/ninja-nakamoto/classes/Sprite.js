@@ -1,5 +1,5 @@
 class Sprite {
-    constructor({position, imageSrc, can, draw_, scale = 1, framesMax = 1, framesHold = 10 }) {
+    constructor({ position, imageSrc, can, draw_, scale = 1, framesMax = 1, framesHold = 10 ,frameoffset = { x: 0, y: 0 }}) {
         this.position = position
         this.width = 50
         this.height = 150
@@ -12,6 +12,7 @@ class Sprite {
         this.framesCurrent = 0
         this.framesElapsed = 0
         this.framesHold = framesHold
+        this.frameoffset = frameoffset
     }
 
     draw() {
@@ -21,17 +22,14 @@ class Sprite {
             0,
             this.image.width / this.framesMax,
             this.image.height,
-            this.position.x,
-            this.position.y,
+            this.position.x - this.frameoffset.x,
+            this.position.y - this.frameoffset.y,
             (this.image.width / this.framesMax) * this.scale,
             this.image.height * this.scale
         )
     }
 
-    update() {
-
-        this.draw();
-
+    animateFrame() {
         this.framesElapsed++;
 
         if(this.framesElapsed % this.framesHold === 0) {
@@ -41,6 +39,13 @@ class Sprite {
                 this.framesCurrent = 0
             }
         }
+    }
+
+    update() {
+
+        this.draw();
+        this.animateFrame()
+        
     }
 }
 
