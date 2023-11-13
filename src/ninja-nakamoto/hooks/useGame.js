@@ -15,7 +15,7 @@ import jumpPlayerSrc from '../img/samuraiMack/Jump.png'
 import fallPlayerSrc from '../img/samuraiMack/Fall.png'
 import deathPlayerSrc from '../img/samuraiMack/Death.png'
 import attack1PlayerSrc from '../img/samuraiMack/Attack1.png'
-import takeHitPlayerSrc from '../img/samuraiMack/Take Hit.png'
+import takeHitPlayerSrc from '../img/samuraiMack/TakeHit.png'
 
 // Enemy Animations
 import idleEnemySrc from '../img/kenji/Idle.png'
@@ -24,7 +24,7 @@ import jumpEnemySrc from '../img/kenji/Jump.png'
 import fallEnemySrc from '../img/kenji/Fall.png'
 import deathEnemySrc from '../img/kenji/Death.png'
 import attack1EnemySrc from '../img/kenji/Attack1.png'
-import takeHitEnemySrc from '../img/kenji/Take Hit.png'
+import takeHitEnemySrc from '../img/kenji/TakeHit.png'
 
 import useUtils from './useUtils';
 
