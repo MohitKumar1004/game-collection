@@ -65,7 +65,7 @@ function Tetris() {
       x: 0,
       y: 1
     }))
-    {   
+    {
       updatePlayerPos({
         x: 0,
         y: 1,
@@ -139,7 +139,7 @@ function Tetris() {
               </div>
             )
           }
-          <StartButton callback={startGame}/>
+          <StartButton callback={startGame} gameOver={gameOver}/>
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>

@@ -71,8 +71,8 @@ export default function useGame({ canva }) {
         // Creating player
         const player = new Fighter({
             position: {
-                x: 0,
-                y: 0
+                x: can.width/4-75,
+                y: 100
             },
             velocity: {
                 x: 0,
@@ -133,7 +133,7 @@ export default function useGame({ canva }) {
         // Creating enemy
         const enemy = new Fighter({
             position: {
-                x: 400,
+                x: 3*can.width/4,
                 y: 100
             },
             velocity: {
@@ -268,7 +268,7 @@ export default function useGame({ canva }) {
                 // Attack State
                 player.isAttacking && player.framesCurrent === 4
                 ) {
-                    enemy.takeHit(6)
+                    enemy.takeHit(8)
                     player.isAttacking = false
                     // document.querySelector('#enemy-health').style.width = `${enemy.health}%`;
                     gsap.to('#enemy-health', {
@@ -289,7 +289,7 @@ export default function useGame({ canva }) {
                 // Attack State
                 enemy.isAttacking && enemy.framesCurrent === 1
                 ) {
-                    player.takeHit(3)
+                    player.takeHit(4)
                     enemy.isAttacking = false
                     // document.querySelector('#player-health').style.width = `${player.health}%`;
                     gsap.to('#player-health', {
@@ -324,7 +324,7 @@ export default function useGame({ canva }) {
                     case 'w': 
                         player.velocity.y = -15;
                         break;
-                    case 'e':
+                    case 'x':
                         if(player.image !== player.sprites.attack1.image) {
                             player.attack()
                         }

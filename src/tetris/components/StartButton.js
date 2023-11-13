@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyledStartButton } from '../styles/StyledStartButton'
 
-export default function StartButton({ callback }) {
+export default function StartButton({ callback, gameOver }) {
   return (
     <StyledStartButton onClick={callback}>
-      Start Game
+      { gameOver ? 'Reset Game' : 'Start Game' }
     </StyledStartButton>
   )
 }

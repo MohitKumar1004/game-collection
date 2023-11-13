@@ -8,4 +8,16 @@ export const StyledCell = styled.div`
     border-top-color: rgba(${props => props.color}, 1);
     border-right-color: rgba(${props => props.color}, 1);
     border-left-color: rgba(${props => props.color}, 0.3);
+    animation: ${props => props.animate ? 'fadeIn' : 'none'} 1s forwards;
+
+    @keyframes fadeIn {
+        0% {
+            transform: scale(1);
+            opacity:1;
+        }
+        100% {
+            transform: scale(0);
+            opacity:0;
+        }
+    }
 `
